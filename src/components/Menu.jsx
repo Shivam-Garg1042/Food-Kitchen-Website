@@ -39,11 +39,7 @@ const Menu = () => {
     });
   };
 
-  // const handleSubmit = () => {
-  //   if (!formData.name || !formData.phone || !formData.address) {
-  //     alert('Please fill in all fields');
-  //     return;
-  //   }
+ 
   const handleSubmit = async () => {
   if (!formData.name || !formData.phone || !formData.address) {
     alert('Please fill in all fields');
@@ -79,21 +75,10 @@ const Menu = () => {
     alert('Error submitting order. Please try again.');
   }
 };
-    // Show confirmation message
-  //   setShowConfirmation(true);
-    
-  //   // Auto close after 2 seconds
-  //   setTimeout(() => {
-  //     setShowConfirmation(false);
-  //     setIsModalOpen(false);
-  //     setTotalItems(0);
-  //     setItems({}); // Reset items to zero
-  //     setFormData({ name: '', phone: '', address: '' });
-  //   }, 2500);
-  // };
+  
 
   return (
-    <section id="menu" className="py-4 sm:py-8 bg-amber-40 w-full min-h-screen relative">
+    <section id="menu" className="py-4 sm:py-8 bg-amber-60 w-full min-h-screen relative">
       {/* Background Icons */}
       <div className="absolute inset-0 opacity-20 pointer-events-none overflow-hidden">
         <ChefHat className="absolute top-10 left-10 text-amber-300 w-16 h-16 sm:w-24 sm:h-24" />

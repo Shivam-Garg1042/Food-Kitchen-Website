@@ -21,8 +21,9 @@ const MenuItem = ({ item, quantity, updateTotalItems }) => {
       <h3 className="text-lg font-semibold mt-2">{item.name}</h3>
       <p className="text-gray-600 text-sm">{item.description}</p>
       
-      <div className="flex items-center mt-4 ">
+      <div className="flex items-center justify-between mt-4 ">
         <p className="text-primary font-bold   ">₹{item.price.trim()}</p>
+        <div className="flex items-center gap-1 ">
         <button
           onClick={decrement}
           className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full hover:bg-gray-300 transition-colors"
@@ -36,6 +37,7 @@ const MenuItem = ({ item, quantity, updateTotalItems }) => {
         >
           +
         </button>
+        </div>
       </div>
     </div>
   );

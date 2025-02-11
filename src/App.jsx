@@ -7,6 +7,7 @@ import Contact from "./components/Contact.jsx";
 import Feedback from './components/Feedback.jsx';
 import AboutUs from './components/AboutUs.jsx';
 import FloatingContact from './components/FloatingContact.jsx';
+import Footer from './components/Footer.jsx';
 
 
 
@@ -30,7 +31,7 @@ function App() {
     {/* <FloatingButtons/> */}
     <FloatingContact/>
     
-    
+    <Footer/>
      
     </>
   );
