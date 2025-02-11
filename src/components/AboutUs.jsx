@@ -27,11 +27,11 @@ const AboutUs = () => {
     {
       icon: <PinIcon className="w-12 h-12 text-red-500" />,
       title: "Dine In",
-      description: "Experience a warm, welcoming atmosphere in our restaurant."
+      description: "Experience a warm, welcoming atmosphere in our galley."
     },
     {
       icon: <SmileIcon className="w-12 h-12 text-red-500" />,
-      title: "Tiffin System",
+      title: "Tiffin Service",
       description: "Convenient daily meal subscriptions for home or office."
     }
   ];

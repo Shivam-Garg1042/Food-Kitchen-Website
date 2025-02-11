@@ -7,9 +7,9 @@ import Contact from "./components/Contact.jsx";
 import Feedback from './components/Feedback.jsx';
 import AboutUs from './components/AboutUs.jsx';
 import FloatingContact from './components/FloatingContact.jsx';
-import FloatingButtons from './components/FloatingContact.jsx';
-import { CartProvider } from './components/CartContext';
-import OrderModal from './components/OrderModal';
+
+
+
 
 
 function App() {
@@ -20,16 +20,17 @@ function App() {
     <Navbar/>
     <Header />
     <AboutUs/>
+   
+    
     <Menu/>
+    
     <Testimonials/>
     <Contact/>
     <Feedback/>
     {/* <FloatingButtons/> */}
     <FloatingContact/>
-    {/* <CartProvider>
-      <OrderModal/>
-    </CartProvider> */}
-  
+    
+    
      
     </>
   );

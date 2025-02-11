@@ -55,9 +55,9 @@
 
 
 import  { useState, useEffect } from 'react';
-import heroImage1 from '../assets/logo2.png';
-import heroImage2 from '../assets/logo2.png';
-import heroImage3 from '../assets/logo.png';
+import heroImage1 from '../assets/food2.jpg';
+import heroImage2 from '../assets/food1.avif';
+import heroImage3 from '../assets/food3.jpeg';
 
 const Header = () => {
   const [currentImage, setCurrentImage] = useState(0);
