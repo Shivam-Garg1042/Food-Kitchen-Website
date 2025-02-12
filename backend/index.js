@@ -13,8 +13,8 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(cors());
 app.use(express.json());
-//for deployment
-app.use(express.static(path.join(__dirname,)))
+
+app.use(express.static(path.join(__dirname,))) //////react dir path
 
 //for deployment
 import path from 'path';
@@ -24,6 +24,10 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+//rest api
+app.use('*',function(req,res){
+  res.sendFile(path.join(__dirname,'./client/build/index.html'));
+})
 
 import connectDB from "./config/database.js";
 // MongoDB Connection
