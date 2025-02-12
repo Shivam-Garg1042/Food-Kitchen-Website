@@ -16,19 +16,19 @@ app.use(express.json());
 
 
 
-//for deployment
+// for deployment
 import path from 'path';
 import { fileURLToPath } from "url";
 
-//esmodule fix
+// esmodule fix
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use(express.static(path.join(__dirname,))) //////react dir path
+app.use(express.static(path.join(__dirname,'./frontend'))) //////react dir path
 
-//rest api
+// rest api
 app.use('*',function(req,res){
-  res.sendFile(path.join(__dirname,'./client/build/index.html'));
+  res.sendFile(path.join(__dirname,'./frontend/index.html'));
 })
 
 import connectDB from "./config/database.js";
