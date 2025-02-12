@@ -88,11 +88,9 @@ const Navbar = () => {
         </ul>
 
         <a 
-<<<<<<< HEAD
-          href="#order-now" 
-=======
+
           href="#menu" 
->>>>>>> 96db045 (final)
+
           className="hidden md:block bg-primary text-white px-4 py-2 rounded-full hover:bg-red-700 transition"
         >
           Order Now

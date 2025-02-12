@@ -14,10 +14,9 @@
     "@highcharts/map-collection": "^2.3.0",
     "@radix-ui/react-dialog": "^1.1.5",
     "aos": "^2.3.4",
-<<<<<<< HEAD
-=======
+
     "axios": "^1.7.9",
->>>>>>> 96db045 (final)
+
     "clsx": "^2.1.1",
     "framer-motion": "^11.18.2",
     "highcharts": "^12.1.2",

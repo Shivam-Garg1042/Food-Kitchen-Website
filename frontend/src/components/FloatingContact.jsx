@@ -24,11 +24,9 @@ const FloatingContact = () => {
                 <span>91-8368080096</span>
               </div>
               <p className="text-sm text-gray-600">
-<<<<<<< HEAD
-                Available Mon-Sat: 11AM - 23PM
-=======
+
                 Available Mon-Sat: 8AM - 10PM
->>>>>>> 96db045 (final)
+
               </p>
               <a 
                 href="tel:+918368080096"
