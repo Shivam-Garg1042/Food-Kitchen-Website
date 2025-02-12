@@ -56,7 +56,7 @@ const Menu = () => {
     };
 
     // Send the order data to the backend
-    const response = await axios.post('http://localhost:5000/api/orders/submit', orderData);
+    const response = await axios.post('https://mamtagalley.onrender.com/api/orders/submit', orderData);
 
     if (response.status === 201) {
       // Show confirmation message
