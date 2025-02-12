@@ -24,11 +24,11 @@ import { fileURLToPath } from "url";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-app.use(express.static(path.join(__dirname,'./frontend'))) //////react dir path
+app.use(express.static(path.join(__dirname,'./frontend/dist'))) //////react dir path
 
 // rest api
 app.use('*',function(req,res){
-  res.sendFile(path.join(__dirname,'./frontend/index.html'));
+  res.sendFile(path.join(__dirname,'./frontend/dist/index.html'));
 })
 
 import connectDB from "./config/database.js";
