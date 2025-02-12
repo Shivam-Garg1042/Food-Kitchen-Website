@@ -92,7 +92,7 @@ const Feedback = () => {
     e.preventDefault();
     
     try {
-      await axios.post('https://mamtas-galley.onrender.com/api/feedback/submit', formData);
+      await axios.post('https://localhost/api/feedback/submit', formData);
       
       // Show modal
       setShowModal(true);
