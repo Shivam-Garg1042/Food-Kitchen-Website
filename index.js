@@ -107,7 +107,7 @@ apiRouter.use("/orders", orderRoutes);
 app.use("/api", apiRouter);
 
 // Serve static files
-const frontendPath = path.join(__dirname, "./client/dist");
+const frontendPath = path.join(__dirname, "./client/dist/index.html");
 app.use(express.static(frontendPath));
 
 // Error handling middleware
